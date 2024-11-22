@@ -1,0 +1,233 @@
+
+/* Style général pour le conteneur */
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 40px auto;
+    padding: 40px;
+    max-width: 1200px;
+  }
+  
+  /* Style pour chaque boîte d'article */
+  .box {
+    display: flex;
+   
+    align-items: center;
+    margin-bottom: 40px;
+    padding: 30px;
+    
+    border: 1px solid #e6a4f2;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 1500%;
+    max-width: 800px;
+    background-color: #edb8d3;
+  }
+  
+  .box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Style pour les titres des articles */
+  .box h2 {
+    position: center;
+    left: 250px;
+    bottom: 71px;
+    font-size: 1.8rem;
+    color: #333333;
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-align: center;
+    
+    
+  }
+  
+  /* Style pour les images */
+  .box img {
+    width: 150px;
+    height: auto;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    object-fit: cover;
+    border: 2px solid #131313;
+  }
+  
+  /* Style pour les boutons */
+  .box .btn {
+    margin: 5px;
+    padding: 10px 15px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .box .btn-primary {
+    background-color: #8a548a;
+    color: #ffffff;
+    border: none;
+  }
+  
+  .box .btn-primary:hover {
+    background-color: #9c0f9c;
+  }
+  
+  .box .btn-danger {
+    background-color: #491a49;
+    color: #ffffff;
+    border: none;
+  }
+  
+  .box .btn-danger:hover {
+    background-color: #491a49;
+  }
+  
+  /* Style pour le champ de quantité */
+  .quantity {
+    width: 60px;
+    text-align: center;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 0 5px;
+  }
+  
+  /* Style pour le prix */
+  .box .price {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #080808;
+    margin-top: 15px;
+    margin-right: 10px;
+  }
+  
+  /* Style pour les cœurs */
+  .heart {
+    font-size: 1.8rem;
+    color: #410236;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: color 0.2s ease;
+  }
+  
+  .heart:hover {
+    color: #fa79c9;
+  }
+  
+  /* Style pour le total */
+  #total-price {
+    text-align: center;
+    font-size: 1.8rem;
+    color: #511356;
+    font-weight: bold;
+    margin-top: 30px;
+  }
+  
+  #total-price h2 {
+    font-size: 2rem;
+    color: #57175c;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    #container {
+      padding: 15px;
+    }
+  
+    .box {
+      width: 100%;
+      text-align: center;
+    }
+  
+    .box h2 {
+      font-size: 1.6rem;
+      
+    }
+  
+    .box img {
+      width: 130px;
+    }
+  
+    .quantity {
+      width: 50px;
+    }
+  
+    #total-price h2 {
+      font-size: 1.6rem;
+    }
+  }
+
+
+
+
+
+
+/*.container{
+    display: flex;
+    flex-direction: column;
+    background-color:rgb(194, 172, 215);
+    padding: 10px;
+    align-content: center;
+   justify-content: space-between;
+   gap: 20px;
+
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 30%;
+}
+.box{
+    flex-direction: column;
+    max-width: 30%;
+    gap: 10px;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 30%;
+}
+.panier{
+    text-align: left;
+    font-size: medium;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(247, 112, 16);
+    padding-left: 35%;
+
+}
+.imgpanier{
+    height: 40px;
+    width: 40px;
+}
+
+.quantity{
+    top: 200px;
+    left: 175px;
+}
+
+
+.price{
+    margin: auto;
+    padding-left: 45%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(247, 112, 16);
+}
+.button {
+    width: fit-content;
+    background: transparent;
+    color: white;
+    font-size: 50px;
+    cursor: pointer;
+    border: transparent;
+}
+.heart {
+    font-size: 25px;
+      color:red;
+  }
